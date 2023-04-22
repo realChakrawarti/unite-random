@@ -5,20 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unite Roll</title>
+    <link rel="stylesheet" href="./styles.css" />
     <script type="module" defer src="./main.js"></script>
   </head>
   <body>
-    <h1>Unite Roll</h1>
-    <button id="roll">Roll</button>
-    <p id="path"></p>
-    <p id="held-items"></p>
-    <div>
-      <img id="battle-item-img" width="64px" height="64px" src="" alt="" />
-      <p id="battle-item"></p>
-    </div>
-    <div>
-      <img width="200px" height="200px" id="pokemon-img" src="" alt="" />
-      <p id="pokemon"></p>
-    </div>
+    <header>Unite Random</header>
+    <main>
+      <form id="pokemon-type-form" name="pokemon-type-form">
+        <fieldset>
+          <legend>Select Pokemon Type</legend>
+          <input type="checkbox" id="type-all" name="all" value="all" />
+          <label for="type-attacker">All</label>
+          <input
+            type="checkbox"
+            id="type-attacker"
+            name="attacker"
+            value="attacker"
+          />
+          <label for="type-attacker">Attacker</label>
+          <input
+            type="checkbox"
+            id="type-supporter"
+            name="supporter"
+            value="supporter"
+          />
+          <label for="type-supporter">Supporter</label>
+          <input
+            type="checkbox"
+            id="type-defender"
+            name="defender"
+            value="defender"
+          />
+          <label for="type-defender">Defender</label>
+          <input
+            type="checkbox"
+            id="type-speedster"
+            name="speedster"
+            value="speedster"
+          />
+          <label for="type-speedster">Speedster</label>
+          <input
+            type="checkbox"
+            id="type-all-rounder"
+            name="all-rounder"
+            value="all-rounder"
+          />
+          <label for="type-all-rounder">All-Rounder</label>
+        </fieldset>
+      </form>
+      <button id="roll">Roll</button>
+      <div>
+        <p id="path"></p>
+        <img id="path-img" width="128px" height="128px" src="" alt="" />
+      </div>
+
+      <div>
+        <p id="held-items"></p>
+        <div id="held-items-img"></div>
+      </div>
+      <div>
+        <img id="battle-item-img" width="64px" height="64px" src="" alt="" />
+        <p id="battle-item"></p>
+      </div>
+      <div>
+        <img width="200px" height="200px" id="pokemon-img" src="" alt="" />
+        <p id="pokemon"></p>
+      </div>
+    </main>
+    <footer>
+      <div>
+        All assets, images and texts are owned by © 2022 Pokémon. ©1995-2022
+        Nintendo Creatures Inc. / GAME FREAK inc. © 2022 Tencent. All rights
+        reserved.
+      </div>
+      <div>
+        We are not affiliated, associated, authorized, endorsed by, or in any
+        way officially connected with any of the listed companies.
+      </div>
+    </footer>
   </body>
 </html>

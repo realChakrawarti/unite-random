@@ -15,3 +15,15 @@ export const randomize = (items) => {
   const randomIndex = Math.floor(Math.random() * length);
   return items[randomIndex];
 };
+
+/**
+ * Sets multiple attributes of an HTML Element
+ * @param {HTMLElement} element
+ * @param {Object} attributes
+ */
+
+export const setAttributes = (element, attributes) => {
+  Object.keys(attributes).forEach((property) => {
+    element.setAttribute(property, attributes[property]);
+  });
+};
